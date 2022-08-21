@@ -1,2 +1,3 @@
-# blind_75
-My goal is to solve all 75 problems known as the Blind 75 questions.
+# Blind 75 problems
+
+The original post this project refers to can be found [here](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions).
