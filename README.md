@@ -2,6 +2,8 @@
 
 The original post this project refers to can be found [here](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions).
 
+Note: Individual list items are linked up as an attempt is started.
+
 ## Array
 * Two Sum
 * Best Time to Buy and Sell Stock
