@@ -63,7 +63,7 @@ Note: Individual list items are linked up as an attempt is started.
 
 # Matrix
 * [Set Matrix Zeroes](/problems/set_matrix_zeroes/)
-* Spiral Matrix
+* [Spiral Matrix](/problems/spiral_matrix/)
 * Rotate Image
 * Word Search
 
