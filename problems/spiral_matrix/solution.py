@@ -1,12 +1,13 @@
 from typing import List
 
-# Idea:
-# 1. Start in a direction until the boundary of the matrix is reached
-# 2. Change the direction by 90 degrees
-# 3. Eliminate the column/row which was traversed from the traversable matrix
-# 4. Repeat Step 1 until the result contains n*m entries from the original matrix
-
 class Solution:
+
+    # Idea:
+    # 1. Start in a direction until the boundary of the matrix is reached
+    # 2. Change the direction by 90 degrees
+    # 3. Eliminate the column/row which was traversed from the traversable matrix
+    # 4. Repeat Step 1 until the result contains n*m entries from the original matrix
+
     def spiralOrder(matrix: List[List[int]]) -> List[int]:
         m = len(matrix)
         n = len(matrix[0])
