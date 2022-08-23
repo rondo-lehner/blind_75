@@ -11,7 +11,7 @@ Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
 Output: [[1,0,1],[0,0,0],[1,0,1]]
 ```
 
-## Example 1
+## Example 2
 ![fig 2](../../assets/set_matrix_zeroes_2.jpeg)
 ```
 Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]

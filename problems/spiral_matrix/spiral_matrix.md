@@ -9,7 +9,7 @@ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [1,2,3,6,9,8,7,4,5]
 ```
 
-## Example 1
+## Example 2
 ![fig 2](../../assets/spiral_matrix_2.jpeg)
 ```
 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]

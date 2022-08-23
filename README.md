@@ -41,7 +41,7 @@ Note: Individual list items are linked up as an attempt is started.
 * Course Schedule
 * Pacific Atlantic Water Flow
 * Number of Islands
-* Longest Consecutive Sequence
+* [Longest Consecutive Sequence](/problems/longest_consecutive_sequence/)
 * Alien Dictionary
 * Graph Valid Tree
 * Number of Connected Components in an Undirected Graph
