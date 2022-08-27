@@ -1,34 +1,53 @@
-#include <map>
 #include <vector>
 #include <iostream>
 #include <iterator>
+#include <unordered_set>
 
 class Solution {
 
-    // Idea (sub-optimal as the time complexity is larger than O(n) as it depends on the range of possible values) 
-    // 1. Initialise an array of length equal to the range between the min and max value in the given array (assuming this value is provided)
-    // 2. Iterate over 'nums' and store 1 at the index corresponding with the current number
-    // 3. Iterate over the "hash map" array and track the starting index and length of the longest consecutive sequence of 1s
+    // My original idea was to sort the array as efficiently as possible (e.g. using counting or radix sort) which would not achieve O(n)
+    // The below idea was discovered upon looking at a solution:
+    // Idea:
+    // 1. Store all elements in a set
+    // 2. Loop over the array and start building a sequence by checking if num[i] - 1 is in the set
+    // 3. Keep track of the largest sequence
+
+    // Note: requires c++20, tested with c++20 (g++ -std=c++20 solution.cpp)
 
 public:
     static int longestConsecutive(std::vector<int>& nums) {
-        std::map<int, int> hashMap = std::map<int,int>();
+        std::unordered_set<int> numSet = std::unordered_set<int>();
 
         for(int i; i < nums.size(); i++){
-            hashMap[nums[i]] = 1;
+            numSet.insert(nums[i]);
         };
 
-        for (auto const& x : hashMap){
-            std::cout << x.first << std::endl;
-        };
+        int longestSequence = 0;
+        int currentSequence = 0;
+
+        for(int i; i < nums.size(); i++){
+            if(numSet.contains((nums[i] + 1))){
+                continue;
+            }
+            int currNum = nums[i];
+            currentSequence = 1;
+            while(numSet.contains(currNum - 1)){
+                currNum--;
+                currentSequence++;
+            }
+            if(currentSequence > longestSequence){
+                longestSequence = currentSequence;
+            }
+        }
         
-        return -1;
+        return longestSequence;
     };
 };
 
 int main() {
-    std::vector<int> vec = {0,3,7,2,5,8,4,6,0,1};
-    Solution::longestConsecutive(vec);
+    std::vector<int> vec = {100,4,200,1,3,2};
+    int res = Solution::longestConsecutive(vec);
+    std::cout << "Longest sequence: " << res << std::endl;
 
     return -1;
 };
