@@ -54,7 +54,7 @@ Note: Individual list items are linked up as an attempt is started.
 * Meeting Rooms II
 
 # Linked List
-* Reverse a Linked List
+* [Reverse a Linked List](/problems/reverse_linked_list/)
 * Detect Cycle in a Linked List
 * Merge Two Sorted Lists
 * Merge K Sorted Lists
