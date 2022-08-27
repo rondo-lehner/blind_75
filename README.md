@@ -69,7 +69,7 @@ Note: Individual list items are linked up as an attempt is started.
 
 # String
 * Longest Substring Without Repeating Characters
-* Longest Repeating Character Replacement
+* [Longest Repeating Character Replacement](/longest_repeating_character_replacement/)
 * Minimum Window Substring
 * Valid Anagram
 * Group Anagrams
