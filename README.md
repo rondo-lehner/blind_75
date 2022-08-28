@@ -55,7 +55,7 @@ Note: Individual list items are linked up as an attempt is started.
 
 # Linked List
 * [Reverse a Linked List](/problems/reverse_linked_list/)
-* Detect Cycle in a Linked List
+* [Detect Cycle in a Linked List](/problems/detect_cycle_in_a_linked_list)
 * Merge Two Sorted Lists
 * Merge K Sorted Lists
 * Remove Nth Node From End Of List
