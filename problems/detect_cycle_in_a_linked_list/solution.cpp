@@ -16,16 +16,28 @@ class Solution {
     // 3. add the next pointer to the set and repeat step 2 until a null pointer is encountered
     // Note: this solution has time and space complexity of O(n)
 
-    // TODO: solve problem for space complexity of O(1)
+    // Space complexity of O(1):
+    // Idea stems from looking at a solution. 
 
 public:
-    static bool hasCycle(ListNode *head) {
+    static bool hasCycleTime(ListNode *head) {
         std::unordered_set<ListNode*> nodes;
         nodes.insert(head);
         while(head->next != nullptr){
             if(nodes.count(head->next) > 0) return true;
             head=head->next;
             nodes.insert(head);
+        }
+        return false;
+    }
+
+    static bool hasCycleSpace(ListNode *head) {
+        ListNode* walker = head;
+        ListNode* runner = head;
+        while(walker != nullptr && runner->next->next != nullptr){
+            walker = walker->next;
+            runner = runner->next->next;
+            if(runner == walker) return true;
         }
         return false;
     }
@@ -38,7 +50,8 @@ int main(){
     ListNode* head = new ListNode(3, node3);
     node1->next = node2;
 
-    std::cout << Solution::hasCycle(head) << std::endl;
+    std::cout << Solution::hasCycleTime(head) << std::endl;
+    std::cout << Solution::hasCycleSpace(head) << std::endl;
 
     return -1;
 }
