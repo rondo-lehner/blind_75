@@ -4,3 +4,4 @@ Spiral Matrix
 Longest Consecutive Sequence
 Longest Repeating Character Replacement
 Detect Cycle in a Linked List
+Decode Ways

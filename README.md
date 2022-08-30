@@ -32,7 +32,7 @@ Note: Individual list items are linked up as an attempt is started.
 * Combination Sum
 * House Robber
 * House Robber II
-* Decode Ways
+* [Decode Ways](/problems/decode_ways/)
 * Unique Paths
 * Jump Game
 
